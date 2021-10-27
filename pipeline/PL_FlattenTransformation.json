@@ -46,7 +46,11 @@
 				"name": "Set variable1",
 				"type": "SetVariable",
 				"dependsOn": [],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Name",
+					"value": "Vijay"
+				}
 			}
 		],
 		"variables": {
