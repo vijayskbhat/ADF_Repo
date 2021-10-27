@@ -1,0 +1,9 @@
+{
+	"name": "VijayADF100",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8f757164-d88c-47ed-9e4e-440dfcb1259c",
+		"tenantId": "2dc53863-529f-400b-aed2-ac85afa69ac9"
+	}
+}

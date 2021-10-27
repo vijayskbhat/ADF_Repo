@@ -1,0 +1,46 @@
+{
+	"name": "PL_FlattenTransformation",
+	"properties": {
+		"activities": [
+			{
+				"name": "DF Flatten Transformation",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "DF_FlattenTransformation",
+						"type": "DataFlowReference",
+						"datasetParameters": {
+							"EmployeesJSON": {
+								"FolderName": "Input",
+								"FileName": "EmployeeDetails.json"
+							},
+							"SinkFlattenEmployees": {
+								"FolderName": "Output"
+							}
+						}
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"folder": {
+			"name": "ADF - DEV"
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-10-27T13:50:24Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
